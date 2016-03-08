@@ -1,0 +1,38 @@
+{
+  "name": "es5-starter",
+  "version": "1.0.0",
+  "description": "es5 starter package - eslint, airbnb rules, pre-push, pre-commit, mocha chai. Sweet and simple.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "lint": "eslint . --ext .js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sramam/es5-starter.git"
+  },
+  "pre-commit": [
+    "lint"
+  ],
+  "pre-push": [
+    "lint"
+  ],
+  "keywords": [
+    "es5",
+    "starter"
+  ],
+  "author": "sramam",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sramam/es5-starter/issues"
+  },
+  "homepage": "https://github.com/sramam/es5-starter#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "eslint": "^2.2.0",
+    "eslint-config-airbnb": "^6.0.2",
+    "mocha": "^2.4.5",
+    "pre-commit": "^1.1.2",
+    "pre-push": "^0.1.1"
+  }
+}
